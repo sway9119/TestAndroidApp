@@ -36,13 +36,14 @@ android {
     }
     // databinding 有効化
     buildFeatures {
+        //noinspection DataBindingWithoutKapt
         dataBinding = true
+        viewBinding = true
     }
 }
 
 dependencies {
-
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -50,8 +51,11 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     // epoxy
-    val epoxyVersion = "3.9.0"
+    val epoxyVersion = "3.11.0"
     implementation("com.airbnb.android:epoxy:$epoxyVersion")
     implementation("com.airbnb.android:epoxy-databinding:$epoxyVersion")
     kapt("com.airbnb.android:epoxy-processor:$epoxyVersion")
+    kapt("com.airbnb.android:paris-processor:1.7.1")
+    implementation("com.airbnb.android:epoxy-glide-preloading:$epoxyVersion")
+    implementation("com.airbnb.android:paris:1.7.1")
 }
