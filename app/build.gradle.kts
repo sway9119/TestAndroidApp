@@ -55,7 +55,6 @@ dependencies {
     implementation("com.airbnb.android:epoxy:$epoxyVersion")
     implementation("com.airbnb.android:epoxy-databinding:$epoxyVersion")
     kapt("com.airbnb.android:epoxy-processor:$epoxyVersion")
-    kapt("com.airbnb.android:paris-processor:1.7.1")
     implementation("com.airbnb.android:epoxy-glide-preloading:$epoxyVersion")
     implementation("com.airbnb.android:paris:1.7.1")
 }
