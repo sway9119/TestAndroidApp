@@ -57,4 +57,9 @@ dependencies {
     kapt("com.airbnb.android:epoxy-processor:$epoxyVersion")
     implementation("com.airbnb.android:epoxy-glide-preloading:$epoxyVersion")
     implementation("com.airbnb.android:paris:1.7.1")
+    // room
+    val roomVersion = "2.5.0"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    annotationProcessor("androidx.room:room-compiler:$roomVersion")
+    kapt("androidx.room:room-compiler:$roomVersion")
 }
