@@ -1,6 +1,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable name="title" type="String" />
+        <variable name="isOk" type="Boolean" />
     </data>
 
     <TextView
@@ -11,7 +12,7 @@
         android:paddingRight="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#555"
+        android:customBackground="@{isOk}"
         android:textColor="#fff"
         android:gravity="center_horizontal"
         android:text="@{title}" />
