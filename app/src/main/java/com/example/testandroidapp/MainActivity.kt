@@ -2,7 +2,7 @@ package com.example.testandroidapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.testandroidapp.view.SampleController
+import com.example.testandroidapp.view.controller.SampleController
 import com.example.testandroidapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
