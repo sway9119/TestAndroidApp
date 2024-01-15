@@ -42,9 +42,7 @@ class AsyncTaskExample : AsyncTask<Context, Void, String>() {
         ).build()
         val userDao = db.userDao()
         val users: List<User> = userDao.getAll()
-        // 非同期処理をここに記入
         println(users)
-        // 結果を返す
         return "処理が完了しました"
     }
 
