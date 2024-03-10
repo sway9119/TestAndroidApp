@@ -8,11 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginRight="12dp"
+        android:background="@color/gray_600"
         android:gravity="right">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
             android:textColor="@color/white"
             android:text="保存"
             />
