@@ -8,6 +8,7 @@ import androidx.room.Room
 import com.example.testandroidapp.databinding.ActivityMainBinding
 import com.example.testandroidapp.db.AppDatabase
 import com.example.testandroidapp.db.User
+import com.example.testandroidapp.SampleFragment
 import com.example.testandroidapp.view.controller.SampleController
 import kotlin.coroutines.CoroutineContext
 
@@ -24,11 +25,11 @@ class MainActivity : AppCompatActivity() {
         // 非同期処理を実行する
         AsyncTaskExample().execute(context)
 
-        // RecyclerViewの設定
-        val controller = SampleController()
-        val data = listOf("test") // データを設定
-        controller.setData(data)
-        binding.recyclerView.adapter = controller.adapter
+        // Fragmentを追加
+        val fragment = SampleFragment()
+        supportFragmentManager.beginTransaction()
+            .add(R.id.fragment_container, fragment)
+            .commit()
     }
 }
 
